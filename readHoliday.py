@@ -10,5 +10,4 @@ def changeValue(value):
 
 df = pd.read_csv('feriadosNacionais.csv')
 df["Data"] = df["Data"].apply(changeValue)
-st.title("Hello world!") 
-st.write(df["Data"]) 
+st.dataframe(data=df, hide_index=True) 
